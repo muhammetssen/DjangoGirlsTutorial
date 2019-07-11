@@ -1,1 +1,8 @@
-<h1>Welcomee</h1>
+<h1>Welcome</h1>
+
+
+{%for post in posts%}
+<h2>{{post}}</h2>
+<h2>{{post.published_date}}</h2>
+{%endfor%}
+
