@@ -1,22 +1,10 @@
-{% load static %}
-<head>
-    <link rel="stylesheet" href="{% static 'css/blog.css'%}">
-</head>
+{% extends 'blog/base.html' %}
+{%block content%}
 
-
-
-<body class="main">
-    <div >
-
-        <h1>Welcome</h1>
-        <h1><a href="">Sea</a></h1>
-
-        {%for post in posts%}
+    {%for post in posts%}
         <h2>{{post}}</h2>
         <h2>{{post.published_date}}</h2>
-        {%endfor%}
+    {%endfor%}
 
+{%endblock%}
 
-    </div>
-
-</body>
